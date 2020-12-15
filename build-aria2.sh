@@ -156,15 +156,18 @@ autoreconf -fi || autoreconf -fiv
     --with-libcares \
     --without-gnutls \
     --without-openssl \
-    --with-sqlite3 \
+    --without-sqlite3 \
     --without-libxml2 \
-    --with-libexpat \
+    --without-libexpat \
     --with-libz \
-    --with-libgmp \
-    --with-libssh2 \
+    --without-libgmp \
+    --without-libssh2 \
     --without-libgcrypt \
     --without-libnettle \
     --with-cppunit-prefix=$PREFIX \
+    --disable-bittorrent \
+    --disable-metalink \
+    --disable-XML-RPC \
     ARIA2_STATIC=yes \
     CPPFLAGS="-I$PREFIX/include" \
     LDFLAGS="-L$PREFIX/lib -Wl,--gc-sections,--build-id=none" \
