@@ -12,5 +12,6 @@ http://repo.msys2.org/distrib/msys2-x86_64-latest.tar.xz
 3、运行 init-msys2.bat，将自动执行下载解压编译，编译后的文件在“.\msys64\home\%username%\aria2\aria2\src\aria2.exe”
 
 【其他说明】
-默认编译64位，修改 init-msys2.bat 中的 set MSYSTEM=MINGW64 为 set MSYSTEM=MINGW32，删除 “.\msys64\home\%username%\” 文件夹，再次执行 init-msys2.bat 则编译32位。
-编译时间大概为30-60分钟。
+1、编译时间大概为30-60分钟。
+2、默认编译64位，修改 init-msys2.bat 中的 set MSYSTEM=MINGW64 为 set MSYSTEM=MINGW32，删除 “.\msys64\home\%username%\” 文件夹，再次执行 init-msys2.bat 则编译32位。
+
